@@ -1,0 +1,157 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #000000;
+  background-color: #ffffff;
+  font-size:18px;
+  padding: 0;
+  margin: 0;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 980px;
+}
+
+h1 {
+  font-size: 34px;
+  border: solid 1px #000000;
+  text-align: center;
+  text-decoration: none;
+}
+
+#nav {
+  font-size: 34px;
+  display: flex;
+  list-style: none;
+}
+
+li {
+  margin-left: 40px; 
+}
+
+a {
+  text-decoration: none;
+  color: #000000
+}
+
+/* メイン画像 */
+#main-photo {
+ width: 100%;
+ margin: auto;
+}
+
+/* 見出し */
+.h2-class {
+  text-align: center;
+  font-size: 34px;
+  margin: 50px;
+}
+
+/* Aboutセクション */
+.about {
+  max-width: 820px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+#about-image {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+}
+
+#profile {
+  margin-left: 10px;
+}
+
+#profile > p {
+  font-size: 24px;
+}
+
+#profile > ul {
+  font-size: 18px;
+}
+
+/* Worksセクション */
+.works {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#works {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.works-content {
+  margin: 0 10px;
+  padding-bottom: 60px;
+  width: 25%;
+}
+
+.works-photo {
+  width: 100%;
+  height: 170px;
+  object-fit: cover; /* width, heightといっしょに使います */
+  flex-shrink: 3;
+}
+
+#copyright {
+  text-align: center;
+  font-size: 18px;
+  padding-bottom: 20px;
+}
+
+/* ===================
+スマホ用スタイル
+メディアクエリの設定
+======================*/
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  .works-content {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  
+  }
