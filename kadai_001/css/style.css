@@ -22,7 +22,7 @@ header {
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  max-width: 980px;
+  max-width: 960px;
 }
 
 h1 {
@@ -55,8 +55,10 @@ a {
 
 /* 見出し */
 .h2-class {
+  font-weight: 700;
   text-align: center;
   font-size: 34px;
+  line-height: 49.27px;
   margin: 50px;
 }
 
@@ -102,8 +104,7 @@ a {
 #works {
   display: flex;
   justify-content: center;
-  gap: 15px;
-  align-content: center;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
@@ -113,17 +114,22 @@ a {
   width: 25%;
 }
 
-.works-photo {
-  width: 100%;
-  height: 170px;
-  object-fit: cover; /* width, heightといっしょに使います */
-  flex-shrink: 3;
+.works-content > img {
+  width: 240px;
+  height: 178.42px;
+}
+
+.works-content > p {
+  width: 240px;
+  height: 78px;
+  font-weight: 400;
+  line-height: 26.06px;
 }
 
 #copyright {
   text-align: center;
-  font-size: 18px;
-  padding-bottom: 20px;
+  font-weight: 400;
+  line-height: 26.06px;
 }
 
 /* ===================
@@ -132,26 +138,34 @@ a {
 ======================*/
 @media screen and (max-width: 767px) {
   h1 {
+    font-weight: 41px;
     font-size: 28px;
+    line-height: 40.54px;
   }
   
-  h2 {
+  .h2-class {
     padding: 30px 0 20px;
     font-size: 28px;
+    line-height: 40.54px;
+    text-align: center;
   }
 
   nav li {
     margin: 0 10px;
   }
 
-  nav a {
+  nav > a {
     font-size: 21px;
   }
 
   .works-content {
     width: 100%;
     text-align: center;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
   }
-  
+  .works-content > p {
+    margin-left: auto; 
+    margin-right: auto;
+  }
+
   }
